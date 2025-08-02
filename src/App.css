@@ -1,0 +1,235 @@
+.navbar-brand {
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: 'Segoe UI', sans-serif;
+  color: #ffffff;
+  background: linear-gradient(45deg, #e0c3fc, #8ec5fc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 1.5px;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.navbar-brand:hover {
+  transform: scale(1.05);
+}
+ 
+
+
+
+.navbar-brand::after {
+  content: '';
+  display: block;
+  width: 60%;
+  height: 3px;
+  background: linear-gradient(to right, #ff6ec4, #7873f5);
+  border-radius: 2px;
+  margin-top: 5px;
+  transition: width 0.3s ease;
+}
+
+.navbar-brand:hover::after {
+  width: 80%;
+}
+
+
+.navbar {
+  background: linear-gradient(to right, #3c1361, #5e239d);
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+
+
+.navbar-brand {
+  font-size: 1.9rem;
+  font-weight: bold;
+  font-family: 'Segoe UI', sans-serif;
+  letter-spacing: 1px;
+  color: white;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 6px 10px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar-links li a:hover,
+.navbar-links li a.active {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+/* Hamburger styling */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 6px;
+}
+
+.bar {
+  width: 28px;
+  height: 3px;
+  background-color: white;
+  transition: 0.3s;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .navbar-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #3c1361;
+    width: 100%;
+    padding: 1rem 2rem;
+    transition: all 0.3s ease;
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+
+  .navbar-links li {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .navbar-links li:last-child {
+    border-bottom: none;
+  }
+}
+
+.auth-container {
+  max-width: 420px;
+  margin: 3rem auto;
+  padding: 2rem;
+  border-radius: 12px;
+  background-color: #f7f5fa;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.auth-container h1 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #3c1361;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.auth-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.auth-container label {
+  margin-top: 1rem;
+  margin-bottom: 0.3rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.auth-container input {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.auth-container input:focus {
+  outline: none;
+  border-color: #8b5cf6;
+  box-shadow: 0 0 0 2px rgba(139, 92, 246, 0.2);
+}
+
+.auth-container button {
+  margin-top: 1.5rem;
+  padding: 12px;
+  background-color: #3c1361;
+  color: #fff;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.auth-container button:hover {
+  background-color: #5d1e9c;
+}
+
+@media (max-width: 500px) {
+  .auth-container {
+    margin: 2rem 1rem;
+    padding: 1.5rem;
+  }
+}/* styles/event.css */
+
+.event-container {
+  padding: 2rem;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.event-card {
+  background: #f7f5fa;
+  border: 2px solid #d1c4e9;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-top: 1.5rem;
+  box-shadow: 0 4px 10px rgba(60, 19, 97, 0.08);
+  max-width: 500px;
+}
+
+.event-card h2 {
+  margin-bottom: 0.5rem;
+  color: #3c1361;
+}
+
+.event-card p {
+  margin: 0.5rem 0;
+  color: #333;
+}
+
+.join-button {
+  margin-top: 1rem;
+  padding: 10px 16px;
+  background-color: #3c1361;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.join-button:hover {
+  background-color: #5e239d;
+}
+
