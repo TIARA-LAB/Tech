@@ -18,7 +18,7 @@ const Event = () => {
         <h2>{event.title}</h2>
         <p><strong>Date:</strong> {event.date}</p>
         <p><strong>Platform:</strong> {event.platform}</p>
-        <a href={event.link} target="_blank" rel="noopener noreferrer">
+        <a href={event.link} target="_blank" rel="">
           <button className="join-button">Join on Teams</button>
         </a>
       </div>

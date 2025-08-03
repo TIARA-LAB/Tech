@@ -1,4 +1,4 @@
-// pages/Events.jsx
+
 import React from 'react';
 
 const Events = () => {
