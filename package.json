@@ -1,7 +1,7 @@
 {
   "name": "tech",
   "private": true,
-  "homepage": "https://TIARA-LAB.github.io/Tech",
+  "homepage": "https://TIARA-LAB.github.io",
   "version": "0.0.0",
   "type": "module",
   "scripts": {

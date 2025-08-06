@@ -4,7 +4,7 @@
   font-family: 'Segoe UI', sans-serif;
   color: #ffffff;
   background: linear-gradient(45deg, #e0c3fc, #8ec5fc);
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   letter-spacing: 1.5px;
   position: relative;
@@ -14,10 +14,6 @@
 .navbar-brand:hover {
   transform: scale(1.05);
 }
- 
-
-
-
 .navbar-brand::after {
   content: '';
   display: block;
@@ -86,7 +82,7 @@
   display: none;
   flex-direction: column;
   cursor: pointer;
-  gap: 5px;
+  gap: 2px;
 }
 
 .bar {
@@ -96,9 +92,10 @@
   transition: 0.3s;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .hamburger {
     display: flex;
+    
   }
 
   .navbar-links {
