@@ -41,11 +41,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position:sticky;
+  position: fixed;
+  top: 0;
   margin-top: 0;
   z-index: auto;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
- max-width: fit-content;
+  width: 95vw;
   margin: 0 auto;
 }
 
@@ -127,9 +128,12 @@
 }
 
 .auth-container {
-  max-width: 420px;
+  width: 100%;
   margin: 3rem auto;
   padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: 12px;
   background-color: #f7f5fa;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
@@ -145,12 +149,14 @@
 .auth-container form {
   display: flex;
   flex-direction: column;
+  padding: 30px 40px;
 }
 
 .auth-container label {
   margin-top: 1rem;
   margin-bottom: 0.3rem;
   font-weight: 500;
+  display: block;
   color: #333;
 }
 
@@ -159,6 +165,7 @@
   border-radius: 8px;
   border: 1px solid #ccc;
   font-size: 1rem;
+  width: 100%;
 }
 
 .auth-container input:focus {
@@ -188,7 +195,7 @@
     margin: 2rem 1rem;
     padding: 1.5rem;
   }
-}/* styles/event.css */
+}
 
 .event-container {
   padding: 2rem;

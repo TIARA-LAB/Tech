@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './Navbar.jsx';
 import Portal from './Portal.jsx';
 import Home from './Home';
@@ -18,7 +18,10 @@ const App = () => {
     { label: 'Explore', href: '/explore' }
   ];
 
+  
+  
   return (
+    
     <Router>
       <Navbar links={navLinks} />
       <div className="main-content">
@@ -32,6 +35,7 @@ const App = () => {
         </Routes>
       </div>
     </Router>
+    
   );
 };
 
